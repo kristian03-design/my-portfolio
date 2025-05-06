@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="DOCTYPE" href="portfolio.php">
 </head>
 
 <body>
@@ -20,14 +19,14 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Project</a>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 <!--HOME PAGE-->
     <section id="home">
         <div class="home-content">
             <h1>Hi, I'm Kristian Hernandez</h1>
-            <h3>Web Developer</h3>
+            <h3>Front-End Developer</h3>
             <p>I am Kristian Hernandez, a passionate and aspiring web developer, eager to grow in the
                 tech industry. As a dedicated student, I've gained a knowledge and understanding of both front-end
                 and back-end technologies while studying web development. Am excited to continue learning and
@@ -44,8 +43,114 @@
             <img src="images/home.png" alt="Kristian Hernandez">
             <div class="blob"></div>
         </div>
-
     </section>
+    
+    <!--ABOUT ME-->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About</h2>
+            <span>Introduction</span>
+        </div>
+        <!-- About Content -->
+         <div class="about-container">
+            <div class="about-img">
+                <img src="images/intro-img.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <p>
+                    I am Kristian Hernandez, a passionate and aspiring web developer, eager 
+                    to grow in the tech industry. As a dedicated student, I've gained a knowledge and
+                     understanding of both front-end and back-end technologies while studying web 
+                     development. Am excited to continue learning and apply my skills to build user-friendly, responsive websites and applications that make a meaningful impact.
+                </p>
+                <div class="information">
+                    <!-- Box1 -->
+                    <div class="info-box">
+                        <i class='bx bxs-user' ></i>
+                        <span>Kristian Hernandez</span>
+                    </div>
+                    <!-- Box2 -->
+                    <div class="info-box">
+                        <i class='bx bxs-phone' ></i>
+                        <span>(+63) 970 170 4826</span>
+                    </div>
+                    <!-- Box3 -->
+                    <div class="info-box">
+                        <i class='bx bxl-telegram' ></i>
+                        <span>@klqtie</span>
+                    </div>
+                    <a href="./CV/KristianLloyd_DC_Hernandez_CV.pdf" class="download-cv" id="downloadCv" download>Download Cv</a>
+                    <script>
+                    document.getElementById('downloadCv').addEventListener('click', function(e) {
+                        // Optionally, you can track download or show a message here
+                        // The 'download' attribute will handle the download
+                    });
+                    </script>
+                </div>
+            </div>
+         </div>
+  </section>
+    <!--FACTS ABOUT ME-->
+    <section id="facts" class="facts-section">
+        <h2>Facts About Me</h2>
+        <div class="facts-container">
+          <div class="fact-card">
+            <img src="images/hobbies.jpg" alt="Hobbies Image" class="fact-image">
+            <h3>Hobbies</h3>
+            <p>I enjoy playing online games and basketball, watching Netflix series, and exploring new coding projects during my free time.</p>
+          </div>
+          <div class="fact-card">
+            <img src="images/interests.jpg" alt="Interests Image" class="fact-image">
+            <h3>Interests</h3>
+            <p>I'm passionate about front-end design, UI/UX trends, and staying updated on the latest web development technologies.</p>
+          </div>
+          <div class="fact-card">
+            <img src="images/funfact.jpg" alt="Fun Fact Image" class="fact-image">
+            <h3>Fun Fact</h3>
+            <p>I love listening to alternative rock music, especially bands like Silent Sanctuary, and I’m always on the lookout for new creative inspiration.</p>
+          </div>
+        </div>
+      </section>
+   
+    <!--SKILLS-->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+        </div>
+        <!-- Skills content -->
+         <div class="skills-container">
+            <div class="bars">
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>95%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>89%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Figma</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar figma-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="images/myskillspsd.png" alt="">
+            </div>
+         </div>
+   </section>
+
 <!--PROJECTS-->
     <section id="projects">
         <div class="container">
@@ -58,7 +163,7 @@
                         <p>My first project was a website for my favorite band, where I used HTML, CSS, and PHP
                             to create a responsive and visually appealing platform. It features the band’s bio, discography, and events, helping me
                             improve my skills in web design and dynamic content integration</p>
-                        <a href="SIA-brand-new/index.html" class="btn" target="_blank">View Project</a>
+                        <a href="../SIA-brand-new/index.html" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -67,7 +172,7 @@
                         <h3>Project 2</h3>
                         <p>My Second Project, I developed a fan page for my favorite Netflix series, featuring character profiles,
                             episode guides, and fan reviews. Using HTML and CSS only.</p>
-                        <a href="SIA101/Lab1.html" class="btn" target="_blank">View Project</a>
+                            <a href="../SIA-brand-new/index.html" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -75,34 +180,84 @@
                     <div class="project-info">
                         <h3>Upcoming Project</h3>
                         <p>Upcoming Project here. </p>
-                        <a href="SIA101/Lab1.html" class="btn" target="_blank">View Project</a>
+                        <a href="../SIA-brand-new/index.html" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/upcoming.jpeg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Upcoming Project</h3>
+                        <p>Upcoming Project here. </p>
+                        <a href="../SIA-brand-new/index.html" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/upcoming.jpeg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Upcoming Project</h3>
+                        <p>Upcoming Project here. </p>
+                        <a href="../SIA-brand-new/index.html" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
     </section>
-    <!--ABOUT SECTION-->
-    <section id="about">
-        <div class="about-container">
-            <div class="content">
-                <h1>About Me</h1>
-                <h4 class="label">EMAIL</h4>
-                <p>hkristianlloyd2@gmail.com</p>
-                <h4 class="label">ROLE</h4>
-                <p>Web Developer</p>
-                <h4 class="label">PHONE</h4>
-                <p>(+63) 970 170 4826</p>
-                <a href="CV/KristianLloyd_DC_Hernandez_CV.pdf" download="KristianLloyd_DC_Hernandez_CV.pdf">
-                <button class="download-cv">DOWNLOAD CV <span>&darr;</span></button>
-                </a>
+    
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h2>Contact</h2>
+                <span>Contact With Me</span>
             </div>
-            <div class="image">
-                <img src="images/about-me-pic.jpg" alt="Profile Picture">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" id="name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                    <input type="submit" value="Send" class="contact-button">
+                </form>
+                <div id="formMessage" style="margin-top:10px;"></div>
             </div>
-        </div>
-    </section>
-    <!--FOOTER-->
-    <footer>
-        <p>&copy; 2024 Kristian Hernandez. All rights reserved.</p>
-    </footer>
+            <script>
+                // This form will send your message to your personal email: hkristianlloyd2@gmail.com
+                // Note: For real email delivery, you need a backend service or use a service like EmailJS.
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var name = document.getElementById('name').value.trim();
+                    var email = document.getElementById('email').value.trim();
+                    var message = document.getElementById('message').value.trim();
+                    var formMessage = document.getElementById('formMessage');
 
+                    if (!name || !email || !message) {
+                        formMessage.textContent = "Please fill in all fields.";
+                        formMessage.style.color = "red";
+                        return;
+                    }
+
+                    // Open user's email client to send the message to your email
+                    var mailtoLink = "mailto:hkristianlloyd2@gmail.com"
+                        + "?subject=" + encodeURIComponent("Portfolio Contact from " + name)
+                        + "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+
+                    window.location.href = mailtoLink;
+
+                    formMessage.textContent = "Your email client should open to send the message. Thank you for contacting me, " + name + "!";
+                    formMessage.style.color = "green";
+                    document.getElementById('contactForm').reset();
+                });
+            </script>
+        </section>
+<hr>
+    <!--FOOTER-->
+    <div class="footer">
+        <h2></h2>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/klqtie"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-gmail' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+      </div>
+      <!-- copyright -->
+       <div class="copyright">
+        <p>@kristian_hernandez</p>
+       </div>
 </html>
 </body>
